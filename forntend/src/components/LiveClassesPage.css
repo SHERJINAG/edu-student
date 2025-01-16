@@ -1,0 +1,180 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Leaderboard Container */
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.leaderboard-header {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+
+.leaderboard-header .logo {
+  height: 50px;
+  width: auto;
+}
+
+.leaderboard-header .title {
+  font-size: 24px;
+  margin: 0;
+  flex: 1; /* Take available space for proper alignment */
+  text-align: center; /* Center-align the title */
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Content Section */
+.leaderboard-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.leaderboard-content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #0073e6;
+}
+
+.error {
+  color: red;
+  margin: 1rem 0;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.leaderboard-table th {
+  background-color: #0073e6;
+  color: white;
+  font-size: 1rem;
+}
+
+.leaderboard-table td {
+  font-size: 0.9rem;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.leaderboard-table tr:hover {
+  background-color: #e6f7ff;
+}
+
+.leaderboard-table th:first-child,
+.leaderboard-table td:first-child {
+  text-align: center;
+}
+
+/* Footer Section */
+.leaderboard-footer {
+  background-color: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 90%;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leaderboard-header {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .leaderboard-header .title {
+    font-size: 18px; /* Smaller font size for the title */
+  }
+
+  .profile-icon {
+    height: 40px; /* Smaller icon for smaller screens */
+    width: 40px;
+  }
+
+  .leaderboard-content {
+    padding: 1rem;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .leaderboard-header {
+    flex-direction: row; /* Ensure header remains in a single row */
+    justify-content: space-between; /* Keep logo, title, and profile icon spaced evenly */
+  }
+
+  .leaderboard-header .logo {
+    height: 40px; /* Smaller logo size */
+  }
+
+  .profile-icon {
+    height: 35px; /* Smaller profile icon */
+    width: 35px;
+  }
+
+  .leaderboard-content {
+    padding: 1rem; /* Adjust padding for mobile view */
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.7rem; /* Adjust padding in the table for mobile view */
+  }
+
+  .leaderboard-footer {
+    font-size: 0.8rem; /* Adjust footer font size for mobile */
+  }
+}

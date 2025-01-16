@@ -1,0 +1,5 @@
+img {
+  border-radius: 50%; /* Makes the logo circular if needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+  margin-bottom: 20px; /* Adds space below the logo */
+}

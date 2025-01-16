@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.profile-icon {
+  width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.profile-main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.profile-info {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.details-section, .profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input, button, select {
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.save-button, .edit-button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.save-button:hover, .edit-button:hover {
+  background-color: #45a049;
+}
+
+.dashboard-footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

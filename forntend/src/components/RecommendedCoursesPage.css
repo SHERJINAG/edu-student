@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.courses-header {
+  display: flex;
+  justify-content: space-between; /* Space out the logo and title */
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  height: 80px;
+  margin-left: auto; /* Push the logo to the right */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 0;
+  flex-grow: 1; /* Ensures the title stays centered if needed */
+  text-align: center;
+}
+
+.courses-content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.fields-grid,
+.subfields-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller card size */
+  gap: 15px; /* Reduced gap between cards */
+}
+
+.field-card,
+.subfield-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px; /* Reduced card height */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.field-card:hover,
+.subfield-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Bold and black color for subfields headings */
+.fields-grid h3,
+.subfields-grid p {
+  font-weight: bold; /* Make headings bold */
+  font-size: 1.1rem; /* Slightly smaller heading size */
+  margin: 0;
+  color: black; /* Change heading color to black */
+}
+
+.main-content h3,
+.main-content p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+/* Style for the footer */
+footer p {
+  color: inherit; /* Ensure the footer p inherits color from parent */
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjusted padding for a smaller button */
+  margin: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.resources-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-item {
+  margin-bottom: 15px;
+}
+
+.resource-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.resource-item a:hover {
+  text-decoration: underline;
+}
+
+.courses-footer {
+  text-align: center;
+  background-color: #282c34;
+  color: black; /* Footer text color set to black */
+  padding: 30px 0; /* Increased footer height */
+  font-size: 1.2rem;
+}

@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.dashboard-header {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.dashboard-header .logo {
+  height: 50px;
+}
+
+.dashboard-header .title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Main Content Section */
+/* Dashboard Content Section */
+.dashboard-content {
+  flex: 1; /* Takes available vertical space */
+  display: flex; /* Flexible box layout */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  gap: 20px; /* Spacing between cards */
+  justify-content: center; /* Center cards horizontally */
+  padding: 20px; /* Padding around the content */
+  margin-top: 20px; /* Space above the content */
+}
+
+/* Card Styling */
+.card {
+  background-color: #fff; /* White card background */
+  padding: 20px; /* Internal spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  border: 1px solid #ddd; /* Subtle border for definition */
+  width: 280px; /* Fixed width for uniformity */
+  text-align: center; /* Center-align text */
+  cursor: pointer; /* Pointer cursor for hover interactivity */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Elevated shadow on hover */
+}
+
+.card h2 {
+  font-size: 20px; /* Title font size */
+  color: #007bff; /* Blue title color */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.card p {
+  font-size: 14px; /* Description font size */
+  color: #555; /* Subtle gray color */
+  margin: 0; /* Remove default margin */
+}
+
+
+/* Footer Section */
+.dashboard-footer {
+  background-color: #333; /* Dark gray footer */
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header .title {
+    font-size: 20px; /* Adjust header font size */
+  }
+
+  .card {
+    max-width: 100%; /* Full-width cards on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header {
+    flex-direction: row; /* Ensure items are in a single row */
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Vertically center the items */
+    padding: 10px; /* Adjust padding for small screens */
+  }
+
+  .dashboard-header .logo {
+    height: 40px; /* Adjust logo size */
+  }
+
+  .dashboard-header .title {
+    font-size: 20px; /* Adjust title font size */
+    text-align: center; /* Ensure the title is centered */
+  }
+
+  .dashboard-header .profile-icon {
+    height: 40px;
+    width: 40px; /* Adjust profile icon size */
+  }
+
+  .dashboard-content {
+    padding: 10px;
+  }
+
+
+  .card {
+    padding: 15px; /* Smaller padding for smaller screens */
+  }
+
+  .card h2 {
+    font-size: 18px; /* Adjust card title size */
+  }
+
+  .card p {
+    font-size: 12px; /* Adjust card text size */
+  }
+}

@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Container for Certifications Page */
+.certifications-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header Section */
+.certifications-header {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Tabs Section */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f9;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tabs button:hover,
+.tabs button:focus {
+  color: #0056b3;
+  border-bottom: 2px solid #007bff;
+}
+
+.tabs button:focus {
+  outline: none;
+}
+
+/* Main Content Section */
+.certifications-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.certifications-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.certifications-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.certifications-content .tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tools button {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tools button:hover {
+  background-color: #0056b3;
+}
+
+.tools input[type="color"] {
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Canvas Styling */
+canvas {
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: crosshair;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+/* Motivational Quotes & Jokes */
+.motivational-quotes,
+.jokes {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.motivational-quotes p,
+.jokes p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.motivational-quotes button,
+.jokes button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.motivational-quotes button:hover,
+.jokes button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+.certifications-footer {
+  background-color: #333; /* Light black */
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .profile-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .certifications-content h2 {
+    font-size: 24px;
+  }
+
+  .certifications-content p {
+    font-size: 16px;
+  }
+
+  .tools button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  canvas {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .tabs button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .tools button {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+
+  canvas {
+    width: 100%;
+  }
+}
