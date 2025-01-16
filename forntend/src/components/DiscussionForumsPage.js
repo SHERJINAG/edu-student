@@ -20,7 +20,8 @@ const DiscussionForumsPage = () => {
 
   const fetchQuestions = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/questions", {
+      const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
+      const response = await fetch(`${apiUrl}/api/questions`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -50,7 +51,8 @@ const DiscussionForumsPage = () => {
     const userId = localStorage.getItem("userId"); // Retrieve stored `userId`
 
     try {
-      const response = await fetch("http://localhost:5000/api/questions", {
+      const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
+      const response = await fetch(`${apiUrl}/api/questions`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -82,7 +84,8 @@ const DiscussionForumsPage = () => {
     const userId = localStorage.getItem("userId"); // Retrieve stored `userId`
 
     try {
-      const response = await fetch(`http://localhost:5000/api/questions/${questionId}/answers`, {
+      const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
+      const response = await fetch(`${apiUrl}/api/questions/${questionId}/answers`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

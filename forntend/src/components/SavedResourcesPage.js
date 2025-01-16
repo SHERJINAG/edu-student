@@ -4,6 +4,8 @@ import "./SavedResourcesPage.css";
 
 const SavedResourcesPage = () => {
   const navigate = useNavigate();
+  const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000";
+
 
   return (
     <div className="saved-resources-container">
@@ -28,62 +30,61 @@ const SavedResourcesPage = () => {
 
         {/* Download Links for PDFs */}
         <div className="pdf-download-section">
-          <a href="http://localhost:5000/downloads/download/program.pdf" download>
-            <button className="download-btn">Download Program PDF</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/python_cheat_sheet.pdf" download>
-            <button className="download-btn">Download Python Cheat Sheet</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/web_dev_guide.pdf" download>
-            <button className="download-btn">Download Web Dev Guide</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/ai_lecture_notes.pdf" download>
-            <button className="download-btn">Download AI Lecture Notes</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/machine_learning_guide.pdf" download>
-            <button className="download-btn">Download Machine Learning Guide</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/interactive_tools.pdf" download>
-            <button className="download-btn">Download Interactive Tools</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/data_science_cheat_sheet.pdf" download>
-            <button className="download-btn">Download Data Science Cheat Sheet</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/coding_interview_guide.pdf" download>
-            <button className="download-btn">Download Coding Interview Guide</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/java_cheat_sheet.pdf" download>
-            <button className="download-btn">Download Java Cheat Sheet</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/web_development_notes.pdf" download>
-            <button className="download-btn">Download Web Development Notes</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/react_guide.pdf" download>
-            <button className="download-btn">Download React Guide</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/js_cheat_sheet.pdf" download>
-            <button className="download-btn">Download JS Cheat Sheet</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/database_design_guide.pdf" download>
-            <button className="download-btn">Download Database Design Guide</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/python_notes.pdf" download>
-            <button className="download-btn">Download Python Notes</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/dsa_notes.pdf" download>
-            <button className="download-btn">Download DSA Notes</button>
-          </a>
-
-          <a href="http://localhost:5000/downloads/download/cpp_cheat_sheet.pdf" download>
-            <button className="download-btn">Download C++ Cheat Sheet</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/csharp_cheat_sheet.pdf" download>
-            <button className="download-btn">Download C# Cheat Sheet</button>
-          </a>
-          <a href="http://localhost:5000/downloads/download/advanced_sql_guide.pdf" download>
-            <button className="download-btn">Download Advanced SQL Guide</button>
-          </a>
-        </div>
+      <a href={`${apiUrl}/downloads/download/program.pdf`} download>
+        <button className="download-btn">Download Program PDF</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/python_cheat_sheet.pdf`} download>
+        <button className="download-btn">Download Python Cheat Sheet</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/web_dev_guide.pdf`} download>
+        <button className="download-btn">Download Web Dev Guide</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/ai_lecture_notes.pdf`} download>
+        <button className="download-btn">Download AI Lecture Notes</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/machine_learning_guide.pdf`} download>
+        <button className="download-btn">Download Machine Learning Guide</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/interactive_tools.pdf`} download>
+        <button className="download-btn">Download Interactive Tools</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/data_science_cheat_sheet.pdf`} download>
+        <button className="download-btn">Download Data Science Cheat Sheet</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/coding_interview_guide.pdf`} download>
+        <button className="download-btn">Download Coding Interview Guide</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/java_cheat_sheet.pdf`} download>
+        <button className="download-btn">Download Java Cheat Sheet</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/web_development_notes.pdf`} download>
+        <button className="download-btn">Download Web Development Notes</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/react_guide.pdf`} download>
+        <button className="download-btn">Download React Guide</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/js_cheat_sheet.pdf`} download>
+        <button className="download-btn">Download JS Cheat Sheet</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/database_design_guide.pdf`} download>
+        <button className="download-btn">Download Database Design Guide</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/python_notes.pdf`} download>
+        <button className="download-btn">Download Python Notes</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/dsa_notes.pdf`} download>
+        <button className="download-btn">Download DSA Notes</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/cpp_cheat_sheet.pdf`} download>
+        <button className="download-btn">Download C++ Cheat Sheet</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/csharp_cheat_sheet.pdf`} download>
+        <button className="download-btn">Download C# Cheat Sheet</button>
+      </a>
+      <a href={`${apiUrl}/downloads/download/advanced_sql_guide.pdf`} download>
+        <button className="download-btn">Download Advanced SQL Guide</button>
+      </a>
+    </div>
       </div>
 
       {/* Footer Section */}

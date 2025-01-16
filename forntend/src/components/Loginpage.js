@@ -11,7 +11,8 @@ const LoginPage = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
+      const response = await fetch(`${apiUrl}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

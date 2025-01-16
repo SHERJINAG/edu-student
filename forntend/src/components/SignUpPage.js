@@ -17,7 +17,8 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const response = await fetch('http://localhost:5000/api/auth/signup', {
+    const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
+    const response = await fetch(`${apiUrl}/api/auth/signup`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

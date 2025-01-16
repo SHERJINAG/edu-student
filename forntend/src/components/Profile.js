@@ -21,8 +21,8 @@ const Profile = () => {
           setError('No token found. Please log in.');
           return;
         }
-
-        const response = await axios.get('http://localhost:5000/api/profile', {
+       const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
+        const response = await axios.get(`${apiUrl}/api/profile`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -55,9 +55,9 @@ const Profile = () => {
         setError('No token found. Please log in.');
         return;
       }
-
+       const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
       const response = await axios.put(
-        'http://localhost:5000/api/profile',
+        `${apiUrl}/api/profile`,
         updatedUser,
         {
           headers: {

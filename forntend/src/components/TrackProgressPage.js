@@ -27,9 +27,9 @@ const TrackProgressPage = () => {
         if (!token) {
           throw new Error("No token found. Please log in again.");
         }
-
+        const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
         const response = await fetch(
-          "http://localhost:5000/api/trackProgress/track-progress",
+          `${apiUrl}/api/trackProgress/track-progress`,
           {
             method: "GET",
             headers: {

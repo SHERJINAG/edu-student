@@ -16,8 +16,8 @@ const LiveClassesPage = () => {
         if (!token) {
           throw new Error("No token found. Please log in again.");
         }
-
-        const response = await fetch("http://localhost:5000/api/leaderboard", {
+        const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
+        const response = await fetch(`${apiUrl}/api/leaderboard`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

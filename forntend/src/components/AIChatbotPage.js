@@ -18,7 +18,8 @@ const AIChatbotPage = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/chat", {
+      const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
+      const response = await fetch(`${apiUrl}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userInput }),

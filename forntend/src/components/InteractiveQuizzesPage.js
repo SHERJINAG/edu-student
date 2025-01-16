@@ -60,7 +60,8 @@ const userData = {
   }
 
   try {
-    await axios.post('http://localhost:5000/api/quiz/save-result', userData, {
+    const apiUrl = "https://backend-1-mr8x.onrender.com" || "http://localhost:5000"; 
+    await axios.post(`${apiUrl}/api/quiz/save-result`, userData, {
       headers: {
         Authorization: `Bearer ${token}`, // Include token in the Authorization header
       },
