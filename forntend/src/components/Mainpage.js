@@ -1,8 +1,19 @@
+import { useLocation } from "react-router-dom";
 import React from "react";
 import { Link } from "react-router-dom";
 import myLogo from "../assets/logo.png"; // Your logo
 
 const MainPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div style={styles.container}>
       {/* Header Section */}
