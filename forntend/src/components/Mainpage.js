@@ -15,6 +15,13 @@ const MainPage = () => {
       }
     }
   }, [location]);
+  const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+  
   return (
     <div style={styles.container}>
       {/* Header Section */}
@@ -25,10 +32,10 @@ const MainPage = () => {
 
       {/* Navigation Links */}
       <nav style={styles.nav}>
-        <a href="#home" style={styles.navLink}>Home</a>
-        <a href="#features" style={styles.navLink}>Features</a>
-        <a href="#about" style={styles.navLink}>About Us</a>
-        <a href="#contact" style={styles.navLink}>Contact Us</a>
+        <Link to="/home" style={styles.navLink} onClick={() => scrollToSection('home')}>Home</Link>
+<Link to="/features" style={styles.navLink} onClick={() => scrollToSection('features')}>Features</Link>
+<Link to="/about" style={styles.navLink} onClick={() => scrollToSection('about')}>About Us</Link>
+<Link to="/contact" style={styles.navLink} onClick={() => scrollToSection('contact')}>Contact Us</Link>
         <Link to="/login" style={styles.navLink}>Login</Link>
       </nav>
 
